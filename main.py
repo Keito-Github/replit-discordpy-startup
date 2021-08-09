@@ -5,8 +5,9 @@ import traceback
 from server import keep_alive
 
 prefix = getenv('discord_prefix')
+intents=discord.Intents.all()
 
-bot = commands.Bot(command_prefix=prefix)
+bot = commands.Bot(command_prefix=prefix,help_command=None,intents=intents)
 
 @bot.event
 async def on_ready():
