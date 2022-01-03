@@ -4,7 +4,7 @@ from os import getenv
 import traceback
 from server import keep_alive
 
-prefix = 'OTI3NDg1NjQ0NjU2MjQyNzM5.YdK6UQ.JKX-o0Lv31d3OynFQ3yF2HfIk0o'
+prefix = getenv('discord_prefix')
 intents=discord.Intents.all()
 
 bot = commands.Bot(command_prefix=prefix,help_command=None,intents=intents)
